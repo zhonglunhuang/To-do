@@ -207,10 +207,10 @@ ul.addEventListener('click', (e) => {
                 console.log(err);
             });
     }
-    if (e.target.nodeName == 'SPAN') {
-        let input = document.createElement('input');
-        let span = e.target.closest('li').querySelector('span');
-        input.value = span.textContent;
-        e.target.closest('li').querySelector('span').replaceWith(input);
-    }
+    // if (e.target.nodeName == 'SPAN') {
+    //     let input = document.createElement('input');
+    //     let span = e.target.closest('li').querySelector('span');
+    //     input.value = span.textContent;
+    //     e.target.closest('li').querySelector('span').replaceWith(input);
+    // }
 });
