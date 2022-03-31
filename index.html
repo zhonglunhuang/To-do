@@ -1,13 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="app.js"></script>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script src="app.js" defer type="module"></script>
+        <style>
+            
+            #token span {
+                text-align: center;
+                font-weight: normal;
+                word-wrap:break-word;
+                
+                font-size: 16px;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <form id="form">
+            <h3>EMAIL</h3>
+            <input type="email" name="email" id="email" />
+            <h3>NICKNAME</h3>
+            <input type="text" name="nickname" id="nickname" />
+            <h3>PASSWORD</h3>
+            <input type="password" name="password" id="password" />
+            <button type="submit" value="註冊" src="#">註冊</button>
+        </form>
+        <hr />
+        <form id="login">
+            <h3>EMAIL</h3>
+            <input type="email" name="email" id="email-login" />
+            <h3>PASSWORD</h3>
+            <input type="password" name="password" id="password-login" />
+            <button type="submit" value="login" src="#">登入</button>
+        </form>
+        <div id="token">
+            <H3>Token:<br><textarea id="token-text">尚未取得token</textarea></H3>
+        </div>
+        <form id="checkform">
+            <button type="submit">檢查登入</button>
+            <span id='result'></span>
+        </form>
+        <hr>
+        <form id="logout">
+            <button type="submit">登出</button>
+            <span id='result2'></span>
+        </form>
+        <hr>
+        <form id="addForm">
+            <input type="text" placeholder="請輸入代辦事項">
+            <button type="submit">送出</button>
+        </form>
+        <hr>
+        <ul>
+        </ul>
+    </body>
 </html>
