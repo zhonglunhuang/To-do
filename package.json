@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "axios": "^0.26.1",
+    "parcel": "^2.4.0"
+  },
+  "name": "to-do",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT"
+}
